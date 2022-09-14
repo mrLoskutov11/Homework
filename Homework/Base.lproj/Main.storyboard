@@ -12,21 +12,48 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Homework" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JnN-IS-2ys">
+                                <rect key="frame" x="16" y="113" width="398" height="348"/>
+                                <viewLayoutGuide key="safeArea" id="daW-CE-UkZ"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p0O-b0-Fbi">
+                                <rect key="frame" x="16" y="512" width="398" height="348"/>
+                                <viewLayoutGuide key="safeArea" id="JZW-bT-pol"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="p0O-b0-Fbi" secondAttribute="trailing" constant="16" id="6k5-dG-7KX"/>
+                            <constraint firstItem="p0O-b0-Fbi" firstAttribute="width" secondItem="JnN-IS-2ys" secondAttribute="width" id="KGe-vN-T4X"/>
+                            <constraint firstItem="JnN-IS-2ys" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="54" id="auu-v9-z4p"/>
+                            <constraint firstItem="p0O-b0-Fbi" firstAttribute="top" secondItem="JnN-IS-2ys" secondAttribute="bottom" constant="51" id="fPc-c3-R77"/>
+                            <constraint firstItem="JnN-IS-2ys" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="jQW-oY-nr3"/>
+                            <constraint firstItem="p0O-b0-Fbi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="k9o-wY-3jV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="p0O-b0-Fbi" secondAttribute="bottom" constant="38" id="oit-kw-OmD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JnN-IS-2ys" secondAttribute="trailing" constant="16" id="woQ-b2-5Yj"/>
+                            <constraint firstItem="p0O-b0-Fbi" firstAttribute="height" secondItem="JnN-IS-2ys" secondAttribute="height" id="zJp-pi-bri"/>
+                        </constraints>
+                        <edgeInsets key="layoutMargins" top="0.0" left="16" bottom="0.0" right="16"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="54.67289719626168" y="-34.341252699784022"/>
+            <point key="canvasLocation" x="54.418604651162788" y="-34.763948497854081"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
